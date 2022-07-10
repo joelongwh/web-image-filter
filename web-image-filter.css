@@ -1,0 +1,16 @@
+body {
+  font-family: arial;
+  margin: auto;
+  max-width: 500px;
+  padding: 10px;
+  background-color: AntiqueWhite;
+}
+
+canvas {
+  height: 250px;
+  border: 1px solid gray;
+}
+
+input {
+  font-size: 12pt;
+}

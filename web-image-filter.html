@@ -1,0 +1,42 @@
+<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+
+<h1>Filter Fun</h1>
+<canvas id="cvs"></canvas>
+
+<h2>Load Image</h2>
+<input type="file" id="img" multiple="false" accept="image/*" onchange="loadImage()" />
+
+<h2>Basic Filters</h2>
+
+<p>
+  <input type="button" id="gray" value="Grayscale" onclick="doGray()" />
+  <input type="button" id="red" value="Red" onclick="doRed()" />
+  <input type="button" id="rainbow" value="Rainbow" onclick="doRainbow()" />
+  <input type="button" id="blur" value="Blur" onclick="doBlur()" />
+</p>
+
+<h2>Color Filter</h2>
+
+<p> Red
+ <input type="range" id="redSlider" min="0" max="255" value="0" oninput="editRed(this.value)"/>
+  <output id="redOutput">0</output>
+</p>
+
+<p> Green
+ <input type="range" id="greenSlider" min="0" max="255" value="0" oninput="editGreen(this.value)"/>
+  <output id="greenOutput">0</output>
+</p>
+
+<p> Blue
+ <input type="range" id="blueSlider" min="0" max="255" value="0" oninput="editBlue(this.value)"/>
+  <output id="blueOutput">0</output>
+</p>
+
+<p>
+  <input type="button" id="colorPicker" value="Filter" onclick="doColor()" />
+</p>
+
+<h2>Reset</h2>
+<p>
+  <input type="button" id="reset" value="Reset Image" onclick="reset()" />
+</p>
